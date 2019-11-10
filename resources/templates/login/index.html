@@ -1,0 +1,31 @@
+<html xmlns:th="http://www.thymeleaf.org" layout:decorator="layout">
+
+<div layout:fragment="content">
+
+	<!-- ${person.firstName} -->
+	
+	<!-- /* Bootstrap Snippet: Login Form - CodePen: https://codepen.io/ace-subido/pen/Cuiep */ -->
+
+	<div class="text-center" style="padding-top: 50px">
+		<h1>Welcome !</h1>
+		
+		  <div class="wrapper">
+		    <form class="form-signin" th:action="@{/login/index}" th:object="${person}" method="post">       
+		      <h2 class="form-signin-heading">Please login</h2>
+		      
+		      <input id="username" type="text" class="form-control" name="username" placeholder="Email Address" required="" autofocus="" th:field="*{username}" th:value="${username}"></input>
+		      
+		      <input id="password" type="password" class="form-control" name="password" placeholder="Password" required="" th:field="*{password}" th:value="${password}"></input>      
+		      
+		      <!-- <label class="checkbox"> -->
+		        <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me</input>
+		      <!-- </label> -->
+		      
+		      <button id="btnSubmit" class="btn btn-lg btn-primary btn-block" type="submit">Login</button>   
+		    </form>
+		  </div>
+
+	</div>
+
+</div>
+</html>

@@ -1,0 +1,74 @@
+<html xmlns:th="http://www.thymeleaf.org" layout:decorator="layout">
+
+<div layout:fragment="content">
+
+	<!-- ${person.firstName} -->
+
+	<div class="text-center" style="padding-top: 50px">
+
+		<section class="listings">
+			<div class="wrapper" th:object="${photoInformation}" method="get">
+				
+				<ul class="properties_list">
+					
+					<li th:each="photoInfo : ${photoInformation}">
+						<a href="/house/property.html"> <img th:src="${photoInfo.urlLocation}" height="42" width="42" alt="property image" title="property image" class="property_img" /></a> 
+						<span class="price">$<label th:text="${photoInfo.currentBid}"></label></span>
+						<div class="property_details">
+							<h1>
+								<a href="/house/property.html"><label th:text="${photoInfo.location}"></label> </a>
+							</h1>
+							<h2>
+								<label th:text="${photoInfo.about}"></label> <span class="property_size">(288ftsq)</span>
+							</h2>
+						</div>
+					</li>
+					
+					
+					<!-- INSERT HERE -->
+					
+				</ul>
+				<div class="more_listing">
+					<a href="#" class="more_listing_btn">View More Listings</a>
+				</div>
+			</div>
+		</section>
+		<!--  end listing section  -->
+
+	</div>
+
+</div>
+</html>
+
+	<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script> -->
+	
+	<script type="text/javascript">
+	
+	    displayWeather();
+	
+	    function displayWeather() {
+	
+	        //AJAX call to get users tank coordinates from the database, "ON SUCCESS" we use that data to get the weather for that location
+	        jQuery(document).ready(function($) {
+	            $.ajax({
+	                cache: false,
+	                type: "GET",
+	                url: "${pageContext.request.contextPath}/house/index",
+	                data: {SerialNo: @Model.SerialNo, DeviceNo: @Model.DeviceNo},
+	                contentType: "application/json; charset=utf-8",
+	                dataType: "json",
+	                success: function (data) {
+	                    //alert("Success: " + JSON.stringify(data));
+	                },
+	                failure: function (data) {
+	                    alert("Failure: " + data.status);
+	                },
+	                error: function (data) {
+	                    alert("Error: " + data.status);
+	                }
+	            });
+	          });
+	
+	      }
+		
+		</script>
