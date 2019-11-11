@@ -29,7 +29,7 @@ public class ResourceController {
     @ResponseBody
     @Autowired(required = false)
     public List<String> getListOfResources(@RequestParam(value="resources", required = false) Resource resources ) {
-    	LOG.info("++getListOfResources()");
+    	LOG.info("++getListOfResources(" + resources + ")");
     	return this.resource.getListOfResources();
     }
 }
