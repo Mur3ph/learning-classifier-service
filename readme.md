@@ -18,6 +18,7 @@
 6). [Computational Genetics Laboratory](http://epistasis.org/)
 7). [Institute for Biomedical Informatics (IBI)](http://upibi.org/)
 8). [Learning Classifier Systems in a Nutshell (YouTube)](https://www.youtube.com/watch?v=CRge_cZ2cJc&t=57s)
+9). [Punnet Square](https://en.wikipedia.org/wiki/Punnett_square)
 
 
 
