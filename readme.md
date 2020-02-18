@@ -9,11 +9,15 @@
 3). Add parameters: http://localhost:8080/resource?parameter-via-method-parameter=http://..
 
 
-## Evolutionary Algorithms
+## Evolutionary Algorithms Resources
 1). [Practical Evolutionary Computation: An Introduction](https://blog.dandyer.co.uk/2009/01/20/practical-evolutionary-computation-an-introduction/)
 2). [Evolutionary Algorithm Queestion on Stackoverflow](https://stackoverflow.com/questions/472030/cool-project-to-use-a-genetic-algorithm-for)
 3). [Learning Classifier System Wikipedia](https://en.wikipedia.org/wiki/Learning_classifier_system")
-
+4). [LCS algorithm founded by John Henry Holland](https://en.wikipedia.org/wiki/John_Henry_Holland)
+5). [Complete introduction, review, and roadmap to LCS algorithms](https://dl.acm.org/doi/10.5555/1644490.1644491)
+6). [Computational Genetics Laboratory](http://epistasis.org/)
+7). [Institute for Biomedical Informatics (IBI)](http://upibi.org/)
+8). [Learning Classifier Systems in a Nutshell (YouTube)](https://www.youtube.com/watch?v=CRge_cZ2cJc&t=57s)
 
 
 
